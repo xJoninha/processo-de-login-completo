@@ -1,0 +1,32 @@
+                    <label for="name"><b>Email</b></label>
+                    <input 
+                        type="text"
+                        name="name"
+                        value="<%= locals.oldData ? oldData.name : null %>"
+                        >
+                    <% if(locals.errors && errors.name) { %>
+                        <div class="danger"><%= errors.name.msg %></div>
+                    <% } %>
+
+                    <label for="psw"><b>Senha</b></label>
+                    <input 
+                        type="password"
+                        name="psw"
+                        >
+                    <% if(locals.errors && erros.psw) { %>
+                        <div class="danger"><%= errors.psw.msg %></div>
+                    <% } %>
+
+                    <input 
+                        type="text"
+                        name="remember-user"
+                    >
+                    <label for="rembember_user"><b>Lembrar meu usuário</b></label>
+
+                    <% if(locals.errors && errors.psw) { %>
+                        <div class="danger"><%= errors.psw.msg %></div>
+                    <% } %>
+
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn" style="font-sizer: 18px;"><b>Login</b></button>
+                    </div>

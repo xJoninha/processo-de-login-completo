@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <%- include('partials/navbar'); %>
+    <div>
+        <div class="div-child">
+            <form method="POST" action="/user/register" enctype="multipart/form-data" style="border: 1px solid #ccc;">
+                <div class="container">
+                    <h2>Registro de usuário</h2>
+                    <hr>
+
+                    <label for="name"><b>Nome completo</b></label>
+                    <input 
+                        type="text"
+                        name="name"
+                        value="<%= locals.oldData ? oldData.name : null %>"
+                        >
+                    <% if(locals.errors && errors.name) { %>
+                        <div class="danger"><%= errors.name.msg %>
+                        </div>
+                    <% } %>
+
+                    <label for="email"><b>Email</b></label>
+                    <input 
+                        type="text"
+                        name="email"
+                        value="<%= locals.oldData ? oldData.email : null %>"
+                        >
+                    <% if(locals.errors && errors.email) { %>
+                        <div class="danger"><%= errors.email.msg %>
+                        </div>
+                    <% } %>
+
+                    <label for="psw"><b>Senha</b></label>
+                </div>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>

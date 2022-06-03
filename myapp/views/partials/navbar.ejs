@@ -1,0 +1,23 @@
+<nav style="background-color: #141478;">
+    <div style="display: flex; justify-content: space-between;">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="margin-left: 50px;">
+                <ul>
+                    <li style="color: gainsboro; margin-right: 40px; font-weight: bold; text-transform: uppercase;">Sistema de cadastro de </li>
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin-right: 100px;">
+            <ul>
+                <% if(locals.isLogged) { %>
+                    <li><a href="/users/profile">Perfil</a></li>
+                    <li><a href="/users/logout"></a></li>
+                <% } else { %>
+                    <li><a href="/user/register">Cadastrar usuário</a></li>
+                    <li><a href="/users/login">Login</a></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>
