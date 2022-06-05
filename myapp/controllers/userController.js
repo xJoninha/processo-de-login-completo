@@ -4,9 +4,11 @@ const bcrypt = require('bcrypt')
 const User = require('../models/User')
 
 const controller = {
+
     register: (req, res) => {
         return res.render('userRegisterForm');
     },
+
     processRegister: (req, res) => {
         const resultValidations = validationResult(req);
 
@@ -47,14 +49,31 @@ const controller = {
         return res.render('userLoginForm');
     },
     loginProcess: (req, res) => {
+        
         let userToLogin = User.findUserByField('email', req.body.email);
 
         if(userToLogin) {
             let isPasswordVerified = bcrypt.compareSync(req.body.psw, userToLogin.psw)
 
             if(isPasswordVerified) {
-                return res.send('OK')
+                delete userToLogin.psw;
+                req.session.userLogged = userToLogin;
+
+                if(req.body.remeber_user) {
+                    res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 30 })
+                }
+
+
+                return res.redirect('/user/profile')
             }
+
+            return res.render('userLoginForm', {
+                errors: {
+                    email: {
+                        msg: 'As credenciais são inválidas'
+                    }
+                }
+            })
         }
 
         return res.render('userLoginForm', {
@@ -66,7 +85,11 @@ const controller = {
         })
     },
     profile: (req, res) => {
-        return res.render('userProfile');
+        console.log(req.cookies.userEmail)
+
+        return res.render('userProfile', {
+            userLogged: req.session.userLogged
+        });
     },
 
     logout: (req, res) => {

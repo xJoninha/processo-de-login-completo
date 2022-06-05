@@ -18,11 +18,11 @@
     <div style="margin-top: 40px; text-align: center;">
         <div>
             <div>
-                <h2>Hi user</h2>
-                <img src="" alt="">
+                <h2>Hi <%= userLogged.name %></h2>
+                <img src="/images/avatars/<%= userLogged.avatar %>" alt="">
                 <br>
                 <br>
-                <div>email</div>
+                <div><%= userLogged.email %></div>
             </div>
         </div>
     </div>
