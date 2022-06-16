@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<form action="/cadastrar" method="POST" enctype="multipart/form-data">
+    <!-- <div> -->
+        <div class="form-campos">
+            <h1>Registro de Produto</h1>
+
+            <select name="tipoVinho" id="tipoVinho">
+                <option value="" selected disabled>Selecione o tipo de Vinho</option>
+                <option value="tinto">Tinto</option>
+                <option value="branco">Branco</option>
+                <option value="rose">Rosé</option>
+                <option value="espumante">Espumante</option>
+            </select>
+
+            <label for="Produto Imagem">Imagem do Produto</label>
+            <input type="file" name="imageProduto" id="Produto Imagem" accept="image/jpg, image/png">
+
+            <label for="nomeProduto">Nome do Produto</label>
+            <input type="text" name="nomeProduto" id="nomeProduto">
+
+            <label for="precoProduto">Preço do produto</label>
+            <input type="number" name="precoProduto" id="precoProduto">
+            
+            <div class="btn">
+                <button>ADICIONAR</button>
+                <button type="reset">Limpar</button>
+            </div>
+            
+        </div>
+    <!-- </div> -->
+</form>
