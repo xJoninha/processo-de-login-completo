@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 a {
+    width: auto;
+    height: auto;
     text-decoration: none;
     color: inherit;
 }
@@ -48,7 +51,7 @@ a {
 
 .header-container li {
     color: white;
-    padding: 16px;
+    margin: 16px;
     font-size: 24px;
 }
 
@@ -100,9 +103,91 @@ form {
     padding-top: 100px;
 }
 
-.home-txt {
+.text-center {
     margin: 0 auto;
     text-align: center;
     padding-top: 100px;
     font-size: 40px;
 }
+
+.produtos {
+    margin: 0 auto;
+    width: 90%;
+    height: 80vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.produtos-titulo {
+    margin: 20px 40px;
+}
+
+/*CARD DO VINHO*/
+.vinho-card {
+    margin: 10px 10px;
+    background-color: rgb(197, 255, 197);
+    border-radius: 4px;
+    min-width: 200px;
+    width: 207px;
+    height: 261px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.vinho-image {
+    width: 90%;
+    height: 140px;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.vinho-image img {
+    height: 100%;
+}
+
+.vinho-nome {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.vinho-preco {
+    font-size: 18px;
+    text-align: right;
+    position: relative;
+    top: 12px;
+    left: 120px;
+}
+
+.vinho-button {
+    width: 140px;
+    height: 35px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transform: translatey(15px);
+    letter-spacing: 4px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.vinho-card:hover {
+    box-shadow: 0px 0px 3px 0px black;
+}
+
+.vinho-card:hover .vinho-button {
+    color: black;
+    background-color: greenyellow;
+}
+
+
+/*CARD DO VINHO*/

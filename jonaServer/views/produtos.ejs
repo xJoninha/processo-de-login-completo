@@ -1,6 +1,27 @@
-<%- include(partials/header) %>
+<%- include('partials/head') %>
+<%- include('partials/header') %>
         <main>
-            <h1>PRODUTOS</h1>
+            <h1 class="produtos-titulo"><%= title %></h1>
+            <% if (locals.produtos) { %>
+            <div class="produtos">
+                <% for (let produto of produtos) { %>
+                <div class="vinho-card">
+                    <div class="vinho-image">
+                        <img src="/images/vinhos/<%= produto.imageProduto %>" alt="">
+                    </div>
+                    <div>
+                        <h4 class="vinho-nome"><%= produto.nomeProduto %></h4>
+                        <span class="vinho-preco">R$ <%= produto.precoProduto %></span>
+                    </div>
+                    <button class="vinho-button">Comprar</button>
+                </div>
+                <% } %>
+            </div><!--Produtos-->
+            <% } else { %>
+                <div>
+                    <h2>Não tem Produtos</h2>
+                </div>
+            <% } %>
         </main>
     </body>
 </html>
