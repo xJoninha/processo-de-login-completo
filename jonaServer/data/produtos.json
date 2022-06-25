@@ -1,58 +1,36 @@
 [
   {
     "id": 1,
-    "tipoVinho": "tinto",
+    "tipoVinho": "Tinto",
     "nomeProduto": "Alisios",
-    "precoProduto": 7564,
-    "imageProduto": "imageProduto-1656021404904-314562714-Alisios-tinto.jpg"
+    "precoProduto": "72,64",
+    "imageProduto": "imageProduto - 1656108906241 - 685055544 - Alisios-tinto.jpg"
   },
   {
     "id": 2,
-    "tipoVinho": "branco",
-    "nomeProduto": "Belhara",
-    "precoProduto": 8499,
-    "imageProduto": "imageProduto-1656021425555-724785949-Belhara-tinto.jpg"
+    "nomeProduto": "Armando",
+    "precoProduto": "827,34",
+    "imageProduto": "imageProduto - 1656108925325 - 214715373 - Armando-tinto.jpg"
   },
   {
     "id": 3,
-    "tipoVinho": "rose",
-    "nomeProduto": "Cainelli",
-    "precoProduto": 2579,
-    "imageProduto": "imageProduto-1656021446714-488737845-Cainelli-cabernet-tinto.jpg"
+    "tipoVinho": "Rosé",
+    "nomeProduto": "Belhara",
+    "precoProduto": "72,48",
+    "imageProduto": "imageProduto - 1656108941614 - 710994488 - Belhara-tinto.jpg"
   },
   {
     "id": 4,
-    "tipoVinho": "espumante",
-    "nomeProduto": "Travessia",
-    "precoProduto": 6229,
-    "imageProduto": "imageProduto-1656021470537-834725832-Travessia-tinto.jpg"
+    "tipoVinho": "Espumante",
+    "nomeProduto": "Cainelli",
+    "precoProduto": "82,37",
+    "imageProduto": "imageProduto - 1656108957065 - 777435643 - Cainelli-cabernet-tinto.jpg"
   },
   {
     "id": 5,
-    "tipoVinho": "tinto",
-    "nomeProduto": "Armando",
-    "precoProduto": 8559,
-    "imageProduto": "imageProduto - 1656052842263 - 545078848 - Armando-tinto.jpg"
-  },
-  {
-    "id": 6,
-    "tipoVinho": "tinto",
+    "tipoVinho": "Branco",
     "nomeProduto": "Don Giovanni",
-    "precoProduto": 9974,
-    "imageProduto": "imageProduto - 1656052924421 - 129504798 - Don-giovanni-tinto.jpg"
-  },
-  {
-    "id": 7,
-    "tipoVinho": "tinto",
-    "nomeProduto": "La Couleur",
-    "precoProduto": 4784,
-    "imageProduto": "imageProduto - 1656053303737 - 483244296 - La-couleur-tinto.jpg"
-  },
-  {
-    "id": 8,
-    "tipoVinho": "tinto",
-    "nomeProduto": "Las Falleras",
-    "precoProduto": 2949,
-    "imageProduto": "imageProduto - 1656053329844 - 348909951 - Las-falleras-tinto.jpg"
+    "precoProduto": "142,77",
+    "imageProduto": "imageProduto - 1656108976759 - 488621201 - Don-giovanni-tinto.jpg"
   }
 ]

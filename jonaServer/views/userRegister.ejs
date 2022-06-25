@@ -1,0 +1,31 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<form action="/users/registro" method="POST">
+    <!-- <div> -->
+        <div class="form-campos">
+            <h1>Registro de Usuario</h1>
+
+            <select name="userAdmin" id="">
+                <option value="" selected disabled>Selecionar tipo de usuario</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Usuario">Usuario</option>
+            </select>
+
+
+            <label for="nome">Nome</label>
+            <input type="text" name="userName" id="nome">
+
+            <label for="email">email</label>
+            <input type="email" name="userEmail" id="email">
+
+            <label for="senha">senha</label>
+            <input type="password" name="userPassword" id="senha">
+            
+            <div class="btn">
+                <button>REGISTRAR</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </div>
+    <!-- </div> -->
+</form>

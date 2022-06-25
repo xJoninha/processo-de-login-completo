@@ -113,7 +113,6 @@ form {
 .produtos {
     margin: 0 auto;
     width: 90%;
-    height: 80vh;
     background-color: green;
     display: flex;
     justify-content: center;
@@ -161,7 +160,7 @@ form {
     text-align: right;
     position: relative;
     top: 12px;
-    left: 120px;
+    left: 10px;
 }
 
 .vinho-button {

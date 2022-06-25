@@ -3,19 +3,6 @@ const fs = require('fs')
 const Produto = {
     filename: './data/produtos.json',
 
-    // create: function(produtoData) {
-    //     let allProdutos = this.getProdutos();
-    //     let newProduto = {
-    //         id: this.generateId(),
-    //         ...produtoData
-    //     }
-
-    //     allProdutos.push(newProduto);
-    //     fs.writeFileSync(this.fileName, JSON.stringify(allProdutos, null, ' '));
-    //     return newUser;
-
-    // },
-
     generateId: function() {
         let allProdutos = this.getProdutos();
         let lastProduto = allProdutos.pop();
@@ -26,6 +13,7 @@ const Produto = {
         return 1
     },
 
+// EXCLUIR ESTA PARTE ABAIXO
     getProdutos: function() {
         return JSON.parse(fs.readFileSync(this.filename, 'utf-8'))
     },
@@ -41,7 +29,8 @@ const Produto = {
         let produtoFound = allProdutos.find( oneProduto => oneProduto[field] === value );
         return produtoFound;
     },
+// EXCLUIR ESTA PARTE ACIMA
 
 }
 
-module.exports = Produto
+module.exports = Produto;
