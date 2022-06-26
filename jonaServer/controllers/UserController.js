@@ -43,7 +43,12 @@ controller.adicionarUsuario = (req, res) => {
         });
     }
 
-    User.create(req.body)
+    let userToCreate = {
+        ...req.body,
+        userPassword: bcrypt.hashSync(req.body.userPassword, 10)
+    }
+
+    let userCreated = User.create(userToCreate)
 
     return res.redirect('/sucesso')
 }

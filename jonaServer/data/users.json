@@ -1,3 +1,23 @@
 [
-  
+ {
+  "id": 1,
+  "userAdmin": "Administrador",
+  "userName": "jonas",
+  "userEmail": "jonas@email.com",
+  "userPassword": "$2b$10$/E3fFyqCb5NsjfU5Cp1c/uHQPZFHJvwGgOBFRwsi9pWmnxwZONyc."
+ },
+ {
+  "id": 2,
+  "userAdmin": "Administrador",
+  "userName": "marcelo",
+  "userEmail": "marcelo@email.com",
+  "userPassword": "$2b$10$6K6Ge63wif7LRwY4xeNnzeyJ3L4UQvKAD/Ea7tE9kv1WuKYkzt3a."
+ },
+ {
+  "id": 3,
+  "userAdmin": "Usuario",
+  "userName": "bianca",
+  "userEmail": "bianca@email.com",
+  "userPassword": "$2b$10$9u4T0fHjg5R2ilm0YTqhu.f.HDQZFUefkj9F0XGxoSfC9N5c1qLDe"
+ }
 ]

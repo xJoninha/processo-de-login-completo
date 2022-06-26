@@ -1,36 +1,16 @@
 [
   {
     "id": 1,
-    "tipoVinho": "Tinto",
-    "nomeProduto": "Alisios",
-    "precoProduto": "72,64",
-    "imageProduto": "imageProduto - 1656108906241 - 685055544 - Alisios-tinto.jpg"
+    "tipoVinho": "Branco",
+    "nomeProduto": "teste",
+    "precoProduto": "236,23",
+    "imageProduto": "imageProduto-1656172645966-732580851-funcao.png"
   },
   {
     "id": 2,
-    "nomeProduto": "Armando",
-    "precoProduto": "827,34",
-    "imageProduto": "imageProduto - 1656108925325 - 214715373 - Armando-tinto.jpg"
-  },
-  {
-    "id": 3,
-    "tipoVinho": "Rosé",
-    "nomeProduto": "Belhara",
-    "precoProduto": "72,48",
-    "imageProduto": "imageProduto - 1656108941614 - 710994488 - Belhara-tinto.jpg"
-  },
-  {
-    "id": 4,
     "tipoVinho": "Espumante",
-    "nomeProduto": "Cainelli",
-    "precoProduto": "82,37",
-    "imageProduto": "imageProduto - 1656108957065 - 777435643 - Cainelli-cabernet-tinto.jpg"
-  },
-  {
-    "id": 5,
-    "tipoVinho": "Branco",
-    "nomeProduto": "Don Giovanni",
-    "precoProduto": "142,77",
-    "imageProduto": "imageProduto - 1656108976759 - 488621201 - Don-giovanni-tinto.jpg"
+    "nomeProduto": "wqtqwagfw",
+    "precoProduto": "999.95",
+    "imageProduto": "imageProduto-1656172927926-301087520-revisaoDeCodigoComSenior.png"
   }
 ]

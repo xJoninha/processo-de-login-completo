@@ -4,8 +4,8 @@ const path = require('path')
 const storage = multer.diskStorage({
     destination: (req, file, cb) => cb(null, path.join(__dirname, '../public/images/vinhos')),
     filename: (req, file, cb) => {
-        const generatorName = Date.now() + ' - ' + Math.round(Math.random() * 1e9) + ' - ' + file.originalname 
-        cb(null, file.fieldname + ' - ' + generatorName)
+        const generatorName = Date.now() + '-' + Math.round(Math.random() * 1e9) + '-' + file.originalname 
+        cb(null, file.fieldname + '-' + generatorName)
     }
 })
 

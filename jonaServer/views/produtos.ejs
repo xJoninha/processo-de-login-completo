@@ -11,7 +11,7 @@
                     </div>
                     <div>
                         <h4 class="vinho-nome"><%= produto.nomeProduto %></h4>
-                        <span class="vinho-preco">R$ <%= produto.precoProduto %></span>
+                        <span class="vinho-preco"><%= parseInt(produto.precoProduto).toLocaleString('pt-br', {style:'currency', currency: 'BRL'}) %></span>
                     </div>
                     <button class="vinho-button">Comprar</button>
                 </div>
